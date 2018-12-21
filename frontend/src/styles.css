@@ -10,3 +10,7 @@ body {
 .docs-app-background {
     background: #303030;
 }
+
+.fullWidth{
+    width: 100%;
+}
