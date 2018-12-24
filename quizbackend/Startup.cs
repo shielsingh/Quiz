@@ -29,8 +29,8 @@ namespace quizbackend
             {
                 builder
                 .AllowAnyOrigin()
-                .AllowAnyMethod()
-                .AllowAnyHeader();
+                .AllowAnyHeader()
+                .AllowAnyMethod();
             }));
 
             services.AddDbContext<QuizContext>(opt => opt.UseInMemoryDatabase("quiz"));
