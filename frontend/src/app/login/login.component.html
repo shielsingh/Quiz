@@ -1,0 +1,13 @@
+<mat-card>
+  <mat-card-content>
+      <form [formGroup]="form" (ngSubmit)="auth.login(form.value)">
+          <mat-form-field>
+            <input formControlName="email" type="email" matInput placeholder="E-Mail">
+          </mat-form-field>
+          <mat-form-field>
+            <input formControlName="password" type="password" matInput placeholder="Password">
+          </mat-form-field>
+          <button mat-raised-button color="primary" [disabled]="!form.valid">Log-In</button>
+      </form>
+  </mat-card-content>
+</mat-card>
