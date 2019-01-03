@@ -23,7 +23,7 @@ namespace quizbackend.Controllers
         }
 
         // GET: api/Quizzes/all
-        [HttpGet("/all")]
+        [HttpGet("all")]
         public IEnumerable<Quiz> GetAllQuizzes()
         {
             return _context.Quizzes;

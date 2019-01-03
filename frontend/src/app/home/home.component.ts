@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  template: '<quiz></quiz><quizzes></quizzes>'
+  template: '<play></play>'
 })
 export class HomeComponent {
 }

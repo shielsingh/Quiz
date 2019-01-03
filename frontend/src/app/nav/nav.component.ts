@@ -3,7 +3,8 @@ import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'nav',
-  templateUrl: './nav.component.html'
+  templateUrl: './nav.component.html',
+  styleUrls: ['./nav.component.css'],
 })
 export class NavComponent {
   
