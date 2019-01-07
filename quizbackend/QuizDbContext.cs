@@ -4,12 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using quizbackend.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace quizbackend
 {
-    public class QuizContext : DbContext
+    public class QuizDbContext : IdentityDbContext<IdentityUser>
     {
-        public QuizContext(DbContextOptions<QuizContext> options) : base(options) {}
+        public QuizDbContext(DbContextOptions<QuizDbContext> options) : base(options) {}
 
         public DbSet<Question> Questions { get; set; }
         public DbSet<Quiz> Quizzes { get; set; }

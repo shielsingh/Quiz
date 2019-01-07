@@ -14,9 +14,9 @@ namespace quizbackend.Controllers
     [ApiController]
     public class QuestionsController : ControllerBase
     {
-        private readonly QuizContext _context;
+        private readonly QuizDbContext _context;
 
-        public QuestionsController(QuizContext context)
+        public QuestionsController(QuizDbContext context)
         {
             _context = context;
         }

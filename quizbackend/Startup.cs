@@ -37,10 +37,9 @@ namespace quizbackend
                 .AllowAnyMethod();
             }));
 
-            services.AddDbContext<QuizContext>(opt => opt.UseInMemoryDatabase("quiz"));
-            services.AddDbContext<UserDbContext>(opt => opt.UseInMemoryDatabase("user"));
+            services.AddDbContext<QuizDbContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("QuizDbContext")));
 
-            services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<UserDbContext>();
+            services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<QuizDbContext>();
 
             var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("this is the secret phrase"));
 
