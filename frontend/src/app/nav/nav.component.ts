@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { AuthService } from '../auth.service';
 
 @Component({
-  selector: 'nav',
+  selector: 'app-nav',
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.css'],
 })

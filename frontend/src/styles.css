@@ -17,3 +17,23 @@ body {
 .clickable{
     cursor: pointer;
 }
+
+app-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    color: white;
+    background: #9c27b0
+}
+
+app-root {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 56px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

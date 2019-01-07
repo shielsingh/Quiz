@@ -1,8 +1,8 @@
-<mat-toolbar class="docs-navbar-header">
-  <button mat-button routerLink='/'>Quiz</button>
-  <button mat-button *ngIf="auth.isAuthenticated" routerLink='/quiz'>My Quizzes</button>
+<nav class="docs-navbar-header">
+  <a mat-button routerLink='/'>Quiz</a>
+  <a mat-button *ngIf="auth.isAuthenticated" routerLink='/quiz'>My Quizzes</a>
   <span style="flex: 1 1 auto"></span>
-  <button mat-button *ngIf="!auth.isAuthenticated" routerLink='/register'>Register</button>
-  <button mat-button *ngIf="!auth.isAuthenticated" routerLink='/login'>Log In</button>
-  <button mat-button *ngIf="auth.isAuthenticated" (click)="auth.logout()">Log Out</button>
-</mat-toolbar>
+  <a mat-button *ngIf="!auth.isAuthenticated" routerLink='/register'>Register</a>
+  <a mat-button *ngIf="!auth.isAuthenticated" routerLink='/login'>Log In</a>
+  <a mat-button *ngIf="auth.isAuthenticated" (click)="auth.logout()">Log Out</a>
+</nav>
